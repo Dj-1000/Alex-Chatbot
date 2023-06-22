@@ -1,0 +1,146 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color for the body */
+body {
+  /* background-color: #f5f5f5; */
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,15,156,1) 39%, rgba(0,212,255,1) 100%);
+  background-image: url("https://www.netlabsglobal.com/wp-content/uploads/2021/06/NLChatbotBanner-1920x960.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Center the chat window vertically */
+.container1 {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  top: 260px;
+  width: 500px;
+  margin: 0 auto;
+  /* background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5); */
+}
+
+.transparent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  width: 600px;
+  min-height: 250px;
+  position: relative;
+  left: 450px;
+
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the chat window */
+#chat-window {
+  width: 400px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  margin-left: 50px;
+  max-height: 370px;
+}
+
+/* Style the chat messages */
+.message {
+  padding: 10px;
+}
+
+.user-message {
+  background-color: #f2f2f2;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #e1f5fe;
+  text-align: left;
+}
+
+.message-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Style the user input section */
+#action-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+#send-btn {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  /* display: flex;
+  position: relative;
+  left: 700px; */
+}
+
+#send-btn:hover {
+  background-color: #45a049;
+}
+
+/* Hide the browser's default scrollbar */
+#chat-window::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chat-window::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#chat-window::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+#chat-window::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav-item{
+  font-size: 20px;
+}

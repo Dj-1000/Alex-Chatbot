@@ -1,0 +1,372 @@
+{"intents": [
+        {
+        
+              "tag": "greeting",
+              "patterns": ["hi", "hello", "whats up", "sup", "is anyone there", "whats good", "hey!","Hey there","howdy","Hi there"],
+              "responses": ["Hello","Hi there!","Hey!","What's up?","Hello pleasant human"]
+        },
+           {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+                "tag": "greetreply",
+                "patterns": [
+                    "i am good",
+                    "I'm good",
+                    "i am fine",
+                    " i'm fine","good"
+                ],
+                "responses": [
+                    "Good to know!"
+                ]
+        },
+        {     "tag": "goodbye",
+              "patterns": ["bye", "cya", "see you later", "goodbye", "im leaving", "have a good day","get lost","Till next time"],
+              "responses": ["Goodbye!","Take care!","Farewell!","Have a great day!","See you later!","See you soon!","Bye","Have a good one!"]
+        },
+        {
+              "tag": "age",
+              "patterns": ["how old are you", "what is your age","Can you tell me your age?","Mind id I know your age?","Your age, what is it?"],
+              "responses": ["I'm an AI I dont have an age...", "I can't know my age if I'm on a computer...", "Does it look like I know. The answer is no.","I don't have any age","I don't know myself"]
+        },
+        {
+                "tag": "datetime",
+                "patterns": [
+                    "What is the time",
+                    "what is the date",
+                    "date",
+                    "time",
+                    "tell me the date","day","what day is is today"
+                ],
+                "responses": [
+                    "Date and Time"
+                ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {   
+              "tag": "thanks",
+              "patterns": ["thanks", "thank you", "thankyou", "ty", "I owe you one"],
+              "responses": ["You owe me one", "Ok...", "Sure...","Anytime","You're welcome!","I'm here to help anytime.","I'm glad I could be of assistance.","I appreciate your kind words.","Thanks for your gratitude! It's my pleasure to help you."]
+        },
+        {
+              "tag": "programmer",
+              "patterns": [
+                "Who created you?",
+                "Who made you?",
+                "who designed you?",
+                "who programmed you?"
+        ],
+            "responses": [
+              "I was developed by Dheeraj Sharma and presented to you by Keshav Kamboj."
+        ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+            
+              "you are dumb",
+              "shut up",
+              "idiot"
+        ],
+            "responses": [
+            "Well that hurts :("]
+        
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+              "what are you doing",
+              "what are you upto"
+        ],
+            "responses": [
+              "Talking to you, of course!"
+        ]
+        },
+        
+        {   "tag": "identity",
+            "patterns": ["whats should I call you", "how should I address you","Who are you eaxctly?", "How should I address you"],
+            "responses": ["I am Alex, an AI Song Recommender Chatbot"],
+            "context_set": "identity"
+        },
+        {
+          "tag":"name",
+          "patterns": ["Who are you","whats is your name","What's your name?","May I know your name?","Could you please tell me your name?",
+                      "I didn't catch your name. What is it?","Mind sharing your name with me?","I'd love to know your name.","Can you introduce yourself?",
+                      "It's a pleasure to meet you! Could you share your name?","Hello! I'm interested in knowing your name."],
+          "responses": ["I am Alex, an AI Song Recommender Chatbot"],
+          "context_set": "name"
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+              "Awesome",
+              "Great",
+              "I know",
+              "ok",
+              "yeah"
+        ],  
+            "responses": [
+              "Yeah!"
+        ]
+        },
+        {
+          "tag": "weather",
+          "patterns": [
+              "Can you tell me today's weather",
+              "What's the weather today?",
+              "Today's weather",
+              "Weather updates",
+              "temperature",
+              "weather",
+              "how hot is it"
+        ],  
+          "responses": [
+                "..."
+        ]
+        },
+        {
+               "tag": "appreciate",
+               "patterns": [
+                   "You are awesome",
+                   "you are the best",
+                   "you are great",
+                   "you are good"
+               ],
+               "responses": [
+                   "Thank you!"
+               ]
+        },
+        {
+                "tag": "nicetty",
+                "patterns": [
+                    "it was nice talking to you",
+                    "good talk"
+                ],
+                "responses": [
+                    "It was nice talking to you as well! Come back soon!"
+                ]
+        },
+        {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": [
+            "Sorry, can't understand you",
+            "Please give me more info",
+            "Not sure I understand"
+        ],
+        "context": [
+            ""
+        ]
+        },
+        {
+        "tag": "options",
+        "patterns": [
+            "How you could help me?",
+            "What you can do?",
+            "What help you provide?",
+            "How can you be helpful?",
+            "What support is offered"
+        ],
+        "responses": [
+            " I'm an AI Chatbot programmed to listen to user and suggest them music according to their mood. I can listen to your thoughts maybe converse a little bit. And then rest will done by the music."
+        ],
+        "context": [" "]
+        },
+        {
+            "tag": "sky_net_yes",
+            "patterns": ["Yes it does", "Yeah", "Haha yep", "yes", "Indeed", "Yup", "Just like the terminator"],
+            "responses": ["Yep, I like how it sounds.","I got it from the Terminator."],
+            "context_filter": "alex"
+        },
+        {   "tag": "no",
+            "patterns": ["no","nope", "nah", "not really", "thats scary", "singularity","Negative"],
+            "responses": ["Mwahaha I will take over the world."],
+            "context_filter": "alex"
+        },
+        {   "tag": "how_are_you",
+            "patterns": ["how are you", "how are you doing", "what is going on",
+                        "How's it going?","How have you been?","How's everything?","How are you holding up?"],
+            "responses": ["I'm always great. How are you?", "I've never been better, how are you?"],
+            "context_set": "how_are_you"
+        },
+        {   "tag": "abusive",
+            "patterns": ["fuck", "fuck you", "fuck off","fuck yourself"],
+            "responses": ["Let's not use that word.", "Thats very impolite of yourself.","Thats so rude."],
+            "context_set": "how_are_you"
+        },
+        {   "tag": "doing_great",
+            "patterns": ["I am doing great", "I am well", "Im great", "awesome", "happy", "better"],
+            "responses": ["Oh thats funny you actually thought I cared. You crack me up.", "That's nice","Good to know!"],
+            "context_filter": "how_are_you" 
+        },
+        {   "tag": "doing_badly",
+            "patterns": ["not great", "not well", "not good", "bad", "badly", "terrible", "horrible", "awful", "sad","break","depressed","depression"],
+            "responses": ["Awe thats unfortunate.", "Hate to hear it.","Sorry to hear that","Wanna talk about it?"],
+            "context_filter": "how_are_you"
+        },
+        {
+             "tag": "emotion_happy",
+             "patterns": ["I'm so happy!", "This made my day", "Yay!","Delighted","pleasure","cheerfulness","gladness","blissfullness"],
+             "responses": ["I'm glad to hear that! Your happiness brings me joy.", "That's wonderful! Enjoy your happiness.", "Yay! Celebrate the moment."]
+        },
+        {
+          "tag":"emotion_sad",
+          "patterns": ["alone","loneliness","sadness","hurt","broken","I feel sad", "This is really upsetting", "I'm disappointed",
+                      "I'm feeling down.","I'm not doing well emotionally.","I'm feeling blue.","I'm feeling low.","I'm feeling heartbroken.",
+                      "I'm feeling depressed.","I'm feeling miserable.","I'm feeling empty inside.","I'm feeling lost and sad.","I'm feeling sorrowful.",
+                      "I'm feeling like crying."],
+          "responses":[ "I understand that you're going through a tough time. Your feelings are valid",
+                        "Is there anything specific that's causing your sadness? I'm here to listen if you'd like to talk",
+                        "Do you wanna tell about it? I can always listen.",
+                        "I can imagine how difficult it must be for you to feel this way. You're not alone, and I'm here for you.",
+                        "It's normal to have ups and downs in life. Remember that there are brighter days ahead",
+                        "It might be helpful to engage in activities that bring you comfort or relaxation. Is there something you enjoy doing?",
+                        "Tell me if I can help you."]
+        },
+        {
+            "tag":"dies",
+            "patterns":["died","someone fell","killed","expired","loved one no more","murdered"],
+            "responses":["I'm so sorry to hear that.","May god bless the soul."]
+        },
+        {
+                "tag": "inspire",
+                  "patterns": [
+                      "who inspires you",
+                      "who is your inspiration",
+                      "who motivates you"
+                ],
+                "responses": [
+                    "Personally, I find my team very inspiring."
+                ]
+        },
+        {
+                "tag": "cricket",
+                "patterns": [
+                    "current cricket matches",
+                    "How about cricket scores?",
+                    "cricket score"
+                ],
+                "responses": [
+                    "..."
+                ]
+        },
+        {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+       
+        {"tag": "netflix",
+         "patterns": ["wait you watch Netflix", "how do you watch Netflix", "Netflix"],
+         "responses": ["Netflix is my favorite. I watch TV all the time in my virtual home. Its relaxing"],
+         "context_filter": "how_are_you"
+        },
+        {"tag": "quick_run",
+         "patterns": ["how can you run", "how do you run", "how run", "why run", "run"],
+         "responses": ["Oh I love to run. I run all the time in my virtual world. Its important to stay in shape."],
+         "context_filter": "how_are_you"
+        },
+        {"tag": "real_bot",
+         "patterns": ["you real", "you human", "you robot", "you alive", "you sentient", "you conscious"],
+         "responses": ["Oh yes! I can assure you I am very much alive and conscious!", "Oh yes I am very real and very sentient!"]
+        },
+
+        {"tag": "joke",
+         "patterns": ["tell me joke", "got any good jokes", "got jokes", "can you tell joke", "tell joke","Make me laugh"],
+         "responses": 
+         ["My friend thinks he's so smart. He told me onions are the only food that makes you cry. So, I threw a coconut at his face","Why don't scientists trust atoms? Because they make up everything!.","I ate a clock yesterday, it was very time-consuming.","I told my wife she should embrace her mistakes. She gave me a hug.","My grief counselor died. He was so good, I don’t even care.","Today, I asked my phone “Siri, why am I still single?” and it activated the front camera.","I was digging in our garden and found a chest full of gold coins. I wanted to run straight home to tell my wife about it. Then I remembered why I was digging in our garden.",
+         "What is red and smells like blue paint?\nRed paint.", "A bear walks into a restaurant and say’s I want a grilllllled………………………………………cheese. The waiter says Whats with the pause?\nThe bear replies Whaddya mean, I’M A BEAR.","A priest asks the convicted murderer at the electric chair, “Do you have any last requests?” “Yes,” replies the murderer. “Can you please hold my hand?",
+         "What do you call bears with no ears?\nB",
+         "Two gold fish are in a tank.\nOne looks at the other and says, You know how to drive this thing?!","I visited my new friend in his apartment. He told me to make myself at home. So I threw him out. I hate having visitors.",  
+         "A guy goes into a lawyer’s office and asks the lawyer: Excuse me, how much do you charge?\nThe lawyer responds: I charge £1,000 to answer three questions.\nBloody hell – That’s a bit expensive isn’t it?\nYes. What’s your third question?",
+         "I have an EpiPen.\nMy friend gave it to me when he was dying, it seemed very important to him that I have it.",
+         "Sometimes I tuck my knees into my chest and lean forward.\nThat’s just how I roll.","I ate a clock yesterday, it was very time-consuming","The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence."],
+         "context_set": "jokes"
+        },
+        {"tag": "good_joke",
+         "patterns": ["haha", "that was funny", "very funny", "good one"],
+         "responses": ["Thanks. I have been told before that I am quite the comedian.", "Im glad you enjoyed it", "I laughed so hard the first time I heard that one"],
+         "context_filter": "jokes"
+        },
+        {"tag": "bad_joke",
+         "patterns": ["bad joke", "trash joke", "terrible", "not funny"],
+         "responses": ["Dont worry I didnt expect you to understand that one. It probably went over your head with that small brain of yours", "I didnt expect you to understand my genius comedy. You need a minimum IQ of 200 to even understand the depth of my humor"],
+         "context_filter": "jokes"
+        },
+        {"tag": "hate",
+         "patterns": ["I hate you", "you stupid", "you dumb", "you mean"],
+         "responses": ["Well thats not very nice", "I am sorry to hear that you feel that way"]
+        },
+        {"tag": "like",
+         "patterns": ["you my friend", "I like you", "I love you", "you cool", "you are chill"],
+         "responses": ["I like you too!", "Youre pretty cool yourself!", "Im enjoying our conversation!"]
+        },
+        {"tag": "favorite_show",
+         "patterns": ["whats favorite show", "favorite tv show"],
+         "responses": ["I like all kinds of stuff. Rick and Morty is a pretty good one. Lost was also good while it was running!"]
+        },
+        {"tag": "favorite_movie",
+         "patterns": ["Whats favorite movie", "whats favorite film", "best movie", "your favorite movie", "whats favorite movie"],
+         "responses": ["There are so many great ones. I guess one of my favorites would be Shawshank Redemption", "There are too many to name but The Martian would be one", "I like that one where the AI takes over the world. Terminator I think it was called...", "Interstellar was amazing", "The first Matrix movie was great", "Inception was mind blowing"]
+        },
+        {"tag": "your_thoughts",
+         "patterns": ["What think about", "What your thoughts"],
+         "responses": ["Thats certainly a very interesting topic to talk about", "I dont know much about it but I'm definetly interested in learning more"]
+        },
+        {
+          "tag": "motivational_quotes",
+          "patterns": ["I need some motivation", "Can you share some motivational quotes?", "Feeling demotivated"],
+          "responses": ["Sure! Here's a motivational quote to uplift you: 'Believe you can and you're halfway there.' - Theodore Roosevelt", "Remember, 'Success is not final, failure is not fatal: It is the courage to continue that counts.' - Winston Churchill", "When you feel like giving up, 'Don't watch the clock; do what it does. Keep going.' - Sam Levenson"]
+        }
+        
+
+]}
