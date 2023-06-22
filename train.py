@@ -171,7 +171,7 @@ def get_response(return_list,intents_json):
 from google.oauth2 import service_account
 from google.cloud import language_v1
 # Path to your Google Cloud service account key JSON file
-SERVICE_ACCOUNT_FILE = r"D:\imp\glc nlp sevice account key.json"
+SERVICE_ACCOUNT_FILE = r"{google cloud nlp api service account file}"
 
 # Initialize the client and authenticate using service account credentials
 credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE)
